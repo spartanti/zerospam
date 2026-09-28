@@ -3,46 +3,279 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ZeroSpam — só toca quem você conhece</title>
-<meta name="description" content="App Android que bloqueia ligações de números fora da sua agenda: telemarketing, robôs e golpes não chegam a tocar. Funciona sem internet.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12V5l-9,-4z' fill='%2316804A'/%3E%3C/svg%3E">
-<style>
-  :root { --fg: #151A20; --muted: #4A5563; --bg: #F5F7FA; --card: #FFFFFF; --accent: #16804A; --navy: #0F2A44; --soft: #DDF4E6; }
-  @media (prefers-color-scheme: dark) { :root { --fg: #E3E8EE; --muted: #A9B4C2; --bg: #0C141D; --card: #16212D; --accent: #5BD394; --soft: #12301F; } }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, sans-serif; }
-  header { background: var(--navy); color: #fff; padding: 56px 16px 48px; text-align: center; }
-  header svg { width: 88px; height: 88px; }
-  header h1 { font-size: 2.4rem; margin: 12px 0 4px; }
-  header p { margin: 0 auto; max-width: 560px; color: #DDF4E6; font-size: 1.15rem; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
-  .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-  .card { background: var(--card); border-radius: 16px; padding: 18px 20px; }
-  .card h2 { font-size: 1.05rem; margin: 0 0 4px; color: var(--accent); }
-  .card p { margin: 0; color: var(--muted); }
-  .badge { display: inline-block; margin-top: 20px; padding: 10px 18px; border-radius: 999px; background: var(--soft); color: var(--accent); font-weight: 600; }
-  footer { text-align: center; color: var(--muted); font-size: .95rem; padding: 0 16px 40px; }
-  a { color: var(--accent); }
-</style>
+<title>ZeroSpam — bloqueador de ligações que só deixa tocar quem você conhece</title>
+<meta name="description" content="App Android gratuito que encerra em silêncio as ligações de números fora da sua agenda. Contra telemarketing, robôs e golpes. Funciona sem internet.">
+<link rel="canonical" href="https://spartanti.github.io/zerospam/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZeroSpam">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="ZeroSpam — bloqueador de ligações que só deixa tocar quem você conhece">
+<meta property="og:description" content="App Android gratuito que encerra em silêncio as ligações de números fora da sua agenda. Contra telemarketing, robôs e golpes. Funciona sem internet.">
+<meta property="og:url" content="https://spartanti.github.io/zerospam/">
+<meta property="og:image" content="https://spartanti.github.io/zerospam/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F2A44">
+<link rel="icon" href="/zerospam/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/zerospam/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/zerospam/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/zerospam/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ZeroSpam","applicationCategory":"SecurityApplication","operatingSystem":"Android 10 ou mais novo","softwareVersion":"1.0.3","inLanguage":"pt-BR","isAccessibleForFree":true,"description":"Bloqueador de ligações por lista branca: só toca quem está na sua agenda ou nas exceções do app. Funciona sem internet.","image":"https://spartanti.github.io/zerospam/assets/img/og.jpg","url":"https://spartanti.github.io/zerospam/","downloadUrl":"https://play.google.com/store/apps/details?id=com.spartanti.zerospam","installUrl":"https://play.google.com/store/apps/details?id=com.spartanti.zerospam","publisher":{"@type":"Organization","name":"Spartan TI","url":"https://spartanti.com.br/","email":"admin@spartanti.com.br","address":{"@type":"PostalAddress","addressLocality":"Cariacica","addressRegion":"ES","addressCountry":"BR"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ZeroSpam","url":"https://spartanti.github.io/zerospam/","inLanguage":"pt-BR","publisher":{"@type":"Organization","name":"Spartan TI","url":"https://spartanti.com.br/","email":"admin@spartanti.com.br","address":{"@type":"PostalAddress","addressLocality":"Cariacica","addressRegion":"ES","addressCountry":"BR"}}}</script>
 </head>
-<body>
-<header>
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12V5l-9,-4z" fill="#fff"/><path d="M10,17l-4,-4 1.41,-1.41L10,14.17l6.59,-6.59L18,9l-8,8z" fill="#1FA35C"/></svg>
-  <h1>ZeroSpam</h1>
-  <p>Só toca quem você conhece. Ligações de números fora da sua agenda são encerradas em silêncio, antes de tocar.</p>
-  <span class="badge">Em breve na Google Play · Android 10 ou mais novo</span>
-</header>
-<main>
-  <div class="grid">
-    <div class="card"><h2>Lista branca</h2><p>Contatos e exceções tocam normalmente. O resto não toca, não acende a tela e não avisa.</p></div>
-    <div class="card"><h2>Pausa com um toque</h2><p>Esperando entrega ou motorista? Pause por 15 minutos, 1 hora ou 4 horas.</p></div>
-    <div class="card"><h2>Histórico silencioso</h2><p>Veja quem tentou ligar e salve ou libere o número com um toque.</p></div>
-    <div class="card"><h2>Sem internet</h2><p>O app nem pede acesso à internet. Sua agenda nunca sai do celular.</p></div>
+<body class="">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="/zerospam/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12V5l-9,-4z" fill="#16804A"/><path d="M10,17l-4,-4 1.41,-1.41L10,14.17l6.59,-6.59L18,9l-8,8z" fill="#fff"/></svg>ZeroSpam</a>
+  <nav class="site-nav" aria-label="Principal"><a href="/zerospam/#como-funciona">Como funciona</a><a href="/zerospam/#recursos">Recursos</a><a href="/zerospam/como-ativar/">Como ativar</a><a href="/zerospam/guias/">Guias</a><a href="/zerospam/perguntas-frequentes/">Perguntas</a></nav>
+</div></header>
+<main id="conteudo">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Bloqueador de ligações para Android</p>
+      <h1>Só toca quem <em>você conhece</em>.</h1>
+      <p class="lead">O ZeroSpam encerra em silêncio toda ligação de número que não está na sua agenda. Telemarketing, robô e golpista não chegam a tocar — e quem você conhece liga como sempre.</p>
+      <div class="cta-row"><a class="play-badge " href="https://play.google.com/store/apps/details?id=com.spartanti.zerospam" rel="noopener"><img src="/zerospam/assets/img/google-play-pt-br.png" alt="Disponível no Google Play" width="323" height="125" loading="lazy"></a><a class="btn btn-ghost" href="#como-funciona">Como funciona</a></div>
+      <ul class="checks">
+        <li>Gratuito</li><li>Sem anúncios</li><li>Funciona sem internet</li><li>Android 10 ou mais novo</li>
+      </ul>
+    </div>
+    <div class="hero-art">
+      <div class="phone"><img src="/zerospam/assets/img/home.webp" alt="Tela inicial do ZeroSpam com o escudo verde e a palavra Protegido" width="540" height="1200" fetchpriority="high"></div>
+    </div>
   </div>
+</section>
+
+<section class="section" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Lista branca: a regra é simples</h2>
+      <p>Os bloqueadores comuns tentam adivinhar quem é spam, usando listas de números já denunciados. O problema é que golpista troca de número toda hora, e número novo não está em lista nenhuma. O ZeroSpam faz o contrário: em vez de listar quem barrar, ele só deixa passar quem você conhece.</p>
+    </div>
+    <div class="how">
+      <ol class="steps">
+        <li><div><h3>A ligação chega</h3><p>Antes de o telefone tocar, o Android entrega a chamada ao ZeroSpam.</p></div></li>
+        <li><div><h3>O ZeroSpam confere</h3><p>Ele procura o número na sua agenda e na lista de exceções do app. Tudo no próprio celular, em milésimos de segundo.</p></div></li>
+        <li><div><h3>Toca ou é encerrada</h3><p>Conhecido: o telefone toca como sempre. Desconhecido: a ligação é recusada sem tocar, sem acender a tela e sem notificação.</p></div></li>
+      </ol>
+      <div class="log">
+        <p class="log-title">Uma manhã com o ZeroSpam</p>
+        <p class="log-note">Exemplo ilustrativo.</p>
+        <ul>
+          <li><time>08:12</time><span class="who">Maria<small>está na sua agenda</small></span><span class="tag ring">Tocou</span></li>
+          <li><time>09:40</time><span class="who">0303 700 1234<small>prefixo de telemarketing</small></span><span class="tag drop">Em silêncio</span></li>
+          <li><time>10:05</time><span class="who">(11) 4003-1234<small>robô, 2 tentativas</small></span><span class="tag drop">Em silêncio</span></li>
+          <li><time>10:31</time><span class="who">Interfone da portaria<small>exceção cadastrada</small></span><span class="tag ring">Tocou</span></li>
+          <li><time>11:02</time><span class="who">(61) 99988-7766<small>número desconhecido</small></span><span class="tag drop">Em silêncio</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Por que a lista branca segura o golpe</h2>
+      <p>A diferença aparece justamente no caso que mais dói: o número que ninguém viu antes.</p>
+    </div>
+    <div class="compare">
+      <div>
+        <h3>Bloqueador por lista de spam</h3>
+        <ul>
+          <li>Depende de outras pessoas terem denunciado aquele número antes de você.</li>
+          <li>Número novo de golpista toca normalmente.</li>
+          <li>Em geral consulta servidores na internet e manda para lá o número de quem ligou.</li>
+        </ul>
+      </div>
+      <div class="ours">
+        <h3>ZeroSpam (lista branca)</h3>
+        <ul>
+          <li>Não depende de denúncia: se o número não é seu conhecido, não toca.</li>
+          <li>Número novo de golpista também não toca — é o mesmo caso.</li>
+          <li>A conferência é no aparelho. O app nem tem permissão de internet.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="trade"><strong>A troca é honesta:</strong> ligações legítimas de números desconhecidos também deixam de tocar. Por isso existem a pausa temporária, as exceções, o retorno liberado de quem você chamou e a janela após ligar para a emergência.</p>
+  </div>
+</section>
+
+<section class="section" id="recursos">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Feito para o dia a dia</h2>
+      <p>Tudo com letras grandes, cores fortes e um toque para cada ação — dá para entregar na mão do pai ou da avó.</p>
+    </div>
+
+    <div class="feature">
+      <div>
+        <h3>Esperando uma entrega? Pause</h3>
+        <p>Um toque libera todas as ligações por 15 minutos, 1 hora ou 4 horas. O botão já mostra o horário em que a proteção volta — e ela volta sozinha, sem você precisar lembrar.</p>
+        <ul>
+          <li>Motorista de aplicativo, entregador, consulta médica, banco esperado.</li>
+          <li>Dá para pausar sem abrir o app, segurando o ícone na tela inicial.</li>
+        </ul>
+      </div>
+      <div class="feature-art"><div class="phone"><img src="/zerospam/assets/img/home-pausa.webp" alt="Card verde com os botões Pausar por 15 minutos, 1 hora e 4 horas" width="540" height="1200" loading="lazy"></div></div>
+    </div>
+
+    <div class="feature">
+      <div>
+        <h3>Histórico silencioso</h3>
+        <p>Cada ligação bloqueada fica registrada com data, hora e número — sem notificação, sem badulaque na tela. Tentativas do mesmo número no mesmo dia aparecem juntas, então dá para ver quem está insistindo.</p>
+        <ul>
+          <li>Um toque para salvar o número na agenda ou liberar como exceção.</li>
+          <li>Ligar de volta, copiar o número ou apagar do histórico.</li>
+        </ul>
+      </div>
+      <div class="feature-art"><div class="phone"><img src="/zerospam/assets/img/historico.webp" alt="Histórico do ZeroSpam listando ligações bloqueadas" width="540" height="1200" loading="lazy"></div></div>
+    </div>
+
+    <div class="feature">
+      <div>
+        <h3>Exceções sem bagunçar a agenda</h3>
+        <p>Portaria do prédio, farmácia, oficina, escola: números que precisam tocar, mas que você não quer salvar na agenda do celular. Libere para sempre ou só pelas próximas 24 horas.</p>
+        <ul>
+          <li>Com nome, para você lembrar de quem é.</li>
+          <li>A exceção de 24 horas some sozinha depois do prazo.</li>
+        </ul>
+      </div>
+      <div class="feature-art"><div class="phone"><img src="/zerospam/assets/img/excecoes.webp" alt="Lista de exceções do ZeroSpam com nomes e números liberados" width="540" height="1200" loading="lazy"></div></div>
+    </div>
+
+    <div class="mini">
+      <div><h3>Retorno liberado</h3><p>Ligou para um número nos últimos 7 dias? A resposta dele toca, mesmo sem estar na agenda.</p></div>
+      <div><h3>Retorno de emergência</h3><p>Depois que você liga para 190, 192 ou 193, todas as ligações tocam por 1 hora.</p></div>
+      <div><h3>Ligação insistente</h3><p>Opcional: se o mesmo número ligar de novo em até 3 minutos, a segunda chamada toca.</p></div>
+      <div><h3>Botão nas configurações rápidas</h3><p>Liga e desliga a proteção sem abrir o app, junto com Wi-Fi e lanterna.</p></div>
+      <div><h3>Números ocultos</h3><p>Bloqueia também chamadas sem identificação, se você quiser.</p></div>
+      <div><h3>Na dúvida, toca</h3><p>Sem acesso à agenda ou diante de qualquer erro, o app deixa tocar. Ele nunca arrisca barrar um conhecido.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Para quem é</h2></div>
+    <div class="people">
+      <div>
+        <h3>Quem recebe ligação indesejada todo dia</h3>
+        <p>Oferta de operadora, empréstimo consignado, robô que desliga quando você atende. Nada disso chega ao seu telefone.</p>
+      </div>
+      <div>
+        <h3>Pais, mães e avós</h3>
+        <p>Quase todo golpe por telefone começa com uma ligação de número desconhecido. Com o ZeroSpam ela nem toca — e quem é da família continua ligando normalmente.</p>
+        <a href="/zerospam/guias/como-proteger-idosos-de-golpes-por-telefone/">Guia: proteger idosos de golpes →</a>
+      </div>
+      <div>
+        <h3>Quem resolve tudo por mensagem</h3>
+        <p>Se você fala com todo mundo pelo WhatsApp e só atende ligação de conhecido, a lista branca é exatamente o seu comportamento, automatizado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section privacy">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Sem internet. De verdade.</h2>
+      <p>Não é promessa de política de privacidade: o app não pede permissão de internet, então o Android simplesmente não deixaria ele enviar nada. Dá para conferir na própria ficha da Google Play, em "Permissões do app".</p>
+      <p><a href="/zerospam/privacidade.html">Leia a política de privacidade →</a></p>
+    </div>
+    <dl class="perm">
+      <dt>Permissões que o app pede</dt>
+      <dd>Uma: contatos (<code>READ_CONTACTS</code>)</dd>
+      <dt>Dados enviados para servidores</dt>
+      <dd>Nenhum — não há permissão de internet</dd>
+      <dt>Conta, cadastro ou login</dt>
+      <dd>Não existe</dd>
+      <dt>Anúncios e rastreadores</dt>
+      <dd>Nenhum</dd>
+      <dt>Histórico e exceções</dt>
+      <dd>Só no aparelho, fora do backup na nuvem</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>O que o ZeroSpam não faz</h2><p>Melhor saber antes de instalar do que descobrir depois.</p></div>
+    <ul class="limits">
+      <li>Não bloqueia ligações e mensagens do WhatsApp, nem SMS. Ele age só nas ligações da linha telefônica.</li>
+      <li>Número oculto nem sempre chega aos apps de bloqueio — depende do Android e da operadora. Para garantir, ative também o bloqueio de números privados no app Telefone.</li>
+      <li>No Android 11 ou mais novo, o sistema lista as ligações bloqueadas no app Telefone, marcadas como bloqueadas. Elas não tocam nem avisam, mas ficam visíveis lá.</li>
+      <li>Logo depois de reiniciar o celular, até o primeiro desbloqueio da tela, as ligações tocam normalmente.</li>
+      <li>Não existe versão para iPhone. Lá, o caminho é Ajustes › Telefone › Silenciar Desconhecidos.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Perguntas frequentes</h2></div>
+    <div class="faq">
+  <details>
+    <summary>O ZeroSpam é gratuito?</summary>
+    <div class="answer"><p>É. O app é gratuito, não tem anúncios, não tem compras dentro do app e não pede cadastro.</p></div>
+  </details>
+  <details>
+    <summary>Em quais celulares funciona?</summary>
+    <div class="answer"><p>Android 10 ou mais novo, em aparelho com chip (função de telefone). Não existe versão para iPhone: no iPhone o próprio sistema tem algo parecido em Ajustes › Telefone › Silenciar Desconhecidos, que manda ligações de números fora da agenda direto para a caixa postal.</p></div>
+  </details>
+  <details>
+    <summary>Quem está na minha agenda consegue ligar normalmente?</summary>
+    <div class="answer"><p>Sim. O ZeroSpam reconhece o mesmo número escrito de formas diferentes: com +55, com 0 e código de operadora, com ou sem o nono dígito, com ou sem DDD.</p></div>
+  </details>
+  <details>
+    <summary>E quando eu estou esperando a ligação de um número que não conheço?</summary>
+    <div class="answer"><p>Use a pausa: 15 minutos, 1 hora ou 4 horas. Todas as ligações tocam nesse período e a proteção volta sozinha no fim do tempo. Se for um número que vai ligar sempre (portaria, médico, oficina), cadastre como exceção.</p></div>
+  </details>
+  <details>
+    <summary>O que acontece com quem ligou e foi bloqueado?</summary>
+    <div class="answer"><p>A chamada é recusada antes de tocar. Para quem ligou, é como se a ligação tivesse sido recusada; dependendo da operadora, pode cair na caixa postal. Seu celular não toca, não acende a tela e não mostra aviso nenhum.</p></div>
+  </details>
+  <details>
+    <summary>Eu fico sabendo das ligações bloqueadas?</summary>
+    <div class="answer"><p>Ficam todas no histórico dentro do app, com data, hora e número, e sem notificação. No Android 11 ou mais novo, o próprio sistema também lista essas ligações no app Telefone, marcadas como bloqueadas.</p></div>
+  </details></div>
+    <p style="margin-top:20px"><a href="/zerospam/perguntas-frequentes/">Ver todas as perguntas →</a></p>
+  </div>
+</section>
+
+<section class="section final">
+  <div class="narrow">
+    <h2>Chega de atender robô.</h2>
+    <p>Instale, toque em "Ativar proteção" e responda sim às duas perguntas do Android. Pronto: seu telefone volta a tocar só quando alguém que você conhece está ligando.</p>
+    <div class="cta-row"><a class="play-badge " href="https://play.google.com/store/apps/details?id=com.spartanti.zerospam" rel="noopener"><img src="/zerospam/assets/img/google-play-pt-br.png" alt="Disponível no Google Play" width="323" height="125" loading="lazy"></a><a class="btn btn-ghost" href="/zerospam/como-ativar/">Ver o passo a passo</a></div>
+  </div>
+</section>
 </main>
-<footer>
-  <p><a href="privacidade.html">Política de privacidade</a> · <a href="mailto:admin@spartanti.com.br">admin@spartanti.com.br</a></p>
-  <p>Desenvolvido por Spartan TI</p>
-</footer>
+<footer class="site-foot"><div class="wrap">
+  <div>
+    <a class="brand" href="/zerospam/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12,1L3,5v6c0,5.55 3.84,10.74 9,12 5.16,-1.26 9,-6.45 9,-12V5l-9,-4z" fill="#16804A"/><path d="M10,17l-4,-4 1.41,-1.41L10,14.17l6.59,-6.59L18,9l-8,8z" fill="#fff"/></svg>ZeroSpam</a>
+    <p class="muted" style="margin-top:10px">Bloqueador de ligações por lista branca para Android. Só toca quem você conhece.</p>
+  </div>
+  <div>
+    <h2>O app</h2>
+    <ul>
+      <li><a href="/zerospam/#como-funciona">Como funciona</a></li>
+      <li><a href="/zerospam/#recursos">Recursos</a></li>
+      <li><a href="/zerospam/como-ativar/">Como ativar</a></li>
+      <li><a href="/zerospam/perguntas-frequentes/">Perguntas frequentes</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>Ajuda e conteúdo</h2>
+    <ul>
+      <li><a href="/zerospam/guias/">Guias</a></li>
+      <li><a href="/zerospam/suporte/">Suporte</a></li>
+      <li><a href="/zerospam/privacidade.html">Política de privacidade</a></li>
+      <li><a href="mailto:admin@spartanti.com.br">admin@spartanti.com.br</a></li>
+    </ul>
+  </div>
+  <p class="fine">Desenvolvido pela Spartan TI · Cariacica, ES · Android é marca do Google LLC. Google Play e o logotipo Google Play são marcas do Google LLC.</p>
+</div></footer>
 </body>
 </html>

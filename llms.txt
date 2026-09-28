@@ -1,0 +1,671 @@
+# ZeroSpam
+
+> App Android gratuito que bloqueia ligações de números que não estão na agenda do usuário (lista branca).
+> A chamada desconhecida é encerrada antes de tocar, sem notificação. Funciona inteiramente no aparelho:
+> o app não tem permissão de internet e a única permissão pedida é a de contatos. Feito pela Spartan TI
+> (Cariacica, ES). Site: https://spartanti.github.io/zerospam/ · Contato: admin@spartanti.com.br
+> Google Play: https://play.google.com/store/apps/details?id=com.spartanti.zerospam
+
+## Páginas
+
+- [ZeroSpam — bloqueador de ligações que só deixa tocar quem você conhece](https://spartanti.github.io/zerospam/): App Android gratuito que encerra em silêncio as ligações de números fora da sua agenda. Contra telemarketing, robôs e golpes. Funciona sem internet.
+- [Como ativar o ZeroSpam no Android, passo a passo](https://spartanti.github.io/zerospam/como-ativar/): As duas perguntas que o Android faz, com as telas reais: app identificador de chamadas e spam e acesso aos contatos. Mais o que fazer se a pergunta não aparecer.
+- [Perguntas frequentes sobre o ZeroSpam](https://spartanti.github.io/zerospam/perguntas-frequentes/): Como o bloqueio funciona, o que acontece com quem liga, emergências, privacidade, WhatsApp, bateria e desinstalação.
+- [Guias do ZeroSpam: telemarketing e golpes por telefone](https://spartanti.github.io/zerospam/guias/): Conteúdo prático sobre bloqueio de ligações no Android, prefixo 0303, Não Me Perturbe e proteção de idosos contra golpes por telefone.
+- [Como bloquear ligações de telemarketing no Android — ZeroSpam](https://spartanti.github.io/zerospam/guias/como-bloquear-ligacoes-de-telemarketing/): Não Me Perturbe, prefixo 0303, bloqueio do próprio Android e lista branca: o que cada caminho resolve e o que continua passando.
+- [Como proteger idosos de golpes por telefone — ZeroSpam](https://spartanti.github.io/zerospam/guias/como-proteger-idosos-de-golpes-por-telefone/): Os golpes mais comuns por ligação, os sinais de alerta, as regras que a família deve combinar e como filtrar as chamadas antes que elas cheguem.
+- [Suporte do ZeroSpam](https://spartanti.github.io/zerospam/suporte/): Um desconhecido tocou? Um contato não tocou? Proteção inativa? Causas comuns, soluções e contato direto.
+- [Política de privacidade do ZeroSpam](https://spartanti.github.io/zerospam/privacidade.html): O ZeroSpam não coleta, não envia e não compartilha dados. O app não tem permissão de acesso à internet.
+
+## Conteúdo completo
+
+
+---
+
+# ZeroSpam — bloqueador de ligações que só deixa tocar quem você conhece
+URL: https://spartanti.github.io/zerospam/
+
+Bloqueador de ligações para Android
+
+# Só toca quem você conhece.
+
+O ZeroSpam encerra em silêncio toda ligação de número que não está na sua agenda. Telemarketing, robô e golpista não chegam a tocar — e quem você conhece liga como sempre.
+
+Como funciona
+
+- Gratuito
+
+- Sem anúncios
+
+- Funciona sem internet
+
+- Android 10 ou mais novo
+
+## Lista branca: a regra é simples
+
+Os bloqueadores comuns tentam adivinhar quem é spam, usando listas de números já denunciados. O problema é que golpista troca de número toda hora, e número novo não está em lista nenhuma. O ZeroSpam faz o contrário: em vez de listar quem barrar, ele só deixa passar quem você conhece.
+
+-
+### A ligação chega
+Antes de o telefone tocar, o Android entrega a chamada ao ZeroSpam.
+
+-
+### O ZeroSpam confere
+Ele procura o número na sua agenda e na lista de exceções do app. Tudo no próprio celular, em milésimos de segundo.
+
+-
+### Toca ou é encerrada
+Conhecido: o telefone toca como sempre. Desconhecido: a ligação é recusada sem tocar, sem acender a tela e sem notificação.
+
+Uma manhã com o ZeroSpam
+
+Exemplo ilustrativo.
+
+- 08:12Mariaestá na sua agendaTocou
+
+- 09:400303 700 1234prefixo de telemarketingEm silêncio
+
+- 10:05(11) 4003-1234robô, 2 tentativasEm silêncio
+
+- 10:31Interfone da portariaexceção cadastradaTocou
+
+- 11:02(61) 99988-7766número desconhecidoEm silêncio
+
+## Por que a lista branca segura o golpe
+
+A diferença aparece justamente no caso que mais dói: o número que ninguém viu antes.
+
+### Bloqueador por lista de spam
+
+- Depende de outras pessoas terem denunciado aquele número antes de você.
+
+- Número novo de golpista toca normalmente.
+
+- Em geral consulta servidores na internet e manda para lá o número de quem ligou.
+
+### ZeroSpam (lista branca)
+
+- Não depende de denúncia: se o número não é seu conhecido, não toca.
+
+- Número novo de golpista também não toca — é o mesmo caso.
+
+- A conferência é no aparelho. O app nem tem permissão de internet.
+
+A troca é honesta: ligações legítimas de números desconhecidos também deixam de tocar. Por isso existem a pausa temporária, as exceções, o retorno liberado de quem você chamou e a janela após ligar para a emergência.
+
+## Feito para o dia a dia
+
+Tudo com letras grandes, cores fortes e um toque para cada ação — dá para entregar na mão do pai ou da avó.
+
+### Esperando uma entrega? Pause
+
+Um toque libera todas as ligações por 15 minutos, 1 hora ou 4 horas. O botão já mostra o horário em que a proteção volta — e ela volta sozinha, sem você precisar lembrar.
+
+- Motorista de aplicativo, entregador, consulta médica, banco esperado.
+
+- Dá para pausar sem abrir o app, segurando o ícone na tela inicial.
+
+### Histórico silencioso
+
+Cada ligação bloqueada fica registrada com data, hora e número — sem notificação, sem badulaque na tela. Tentativas do mesmo número no mesmo dia aparecem juntas, então dá para ver quem está insistindo.
+
+- Um toque para salvar o número na agenda ou liberar como exceção.
+
+- Ligar de volta, copiar o número ou apagar do histórico.
+
+### Exceções sem bagunçar a agenda
+
+Portaria do prédio, farmácia, oficina, escola: números que precisam tocar, mas que você não quer salvar na agenda do celular. Libere para sempre ou só pelas próximas 24 horas.
+
+- Com nome, para você lembrar de quem é.
+
+- A exceção de 24 horas some sozinha depois do prazo.
+
+### Retorno liberado
+Ligou para um número nos últimos 7 dias? A resposta dele toca, mesmo sem estar na agenda.
+
+### Retorno de emergência
+Depois que você liga para 190, 192 ou 193, todas as ligações tocam por 1 hora.
+
+### Ligação insistente
+Opcional: se o mesmo número ligar de novo em até 3 minutos, a segunda chamada toca.
+
+### Botão nas configurações rápidas
+Liga e desliga a proteção sem abrir o app, junto com Wi-Fi e lanterna.
+
+### Números ocultos
+Bloqueia também chamadas sem identificação, se você quiser.
+
+### Na dúvida, toca
+Sem acesso à agenda ou diante de qualquer erro, o app deixa tocar. Ele nunca arrisca barrar um conhecido.
+
+## Para quem é
+
+### Quem recebe ligação indesejada todo dia
+
+Oferta de operadora, empréstimo consignado, robô que desliga quando você atende. Nada disso chega ao seu telefone.
+
+### Pais, mães e avós
+
+Quase todo golpe por telefone começa com uma ligação de número desconhecido. Com o ZeroSpam ela nem toca — e quem é da família continua ligando normalmente.
+
+Guia: proteger idosos de golpes →
+
+### Quem resolve tudo por mensagem
+
+Se você fala com todo mundo pelo WhatsApp e só atende ligação de conhecido, a lista branca é exatamente o seu comportamento, automatizado.
+
+## Sem internet. De verdade.
+
+Não é promessa de política de privacidade: o app não pede permissão de internet, então o Android simplesmente não deixaria ele enviar nada. Dá para conferir na própria ficha da Google Play, em "Permissões do app".
+
+Leia a política de privacidade →
+
+Permissões que o app pede
+Uma: contatos (READ_CONTACTS)
+
+Dados enviados para servidores
+Nenhum — não há permissão de internet
+
+Conta, cadastro ou login
+Não existe
+
+Anúncios e rastreadores
+Nenhum
+
+Histórico e exceções
+Só no aparelho, fora do backup na nuvem
+
+## O que o ZeroSpam não faz
+Melhor saber antes de instalar do que descobrir depois.
+
+- Não bloqueia ligações e mensagens do WhatsApp, nem SMS. Ele age só nas ligações da linha telefônica.
+
+- Número oculto nem sempre chega aos apps de bloqueio — depende do Android e da operadora. Para garantir, ative também o bloqueio de números privados no app Telefone.
+
+- No Android 11 ou mais novo, o sistema lista as ligações bloqueadas no app Telefone, marcadas como bloqueadas. Elas não tocam nem avisam, mas ficam visíveis lá.
+
+- Logo depois de reiniciar o celular, até o primeiro desbloqueio da tela, as ligações tocam normalmente.
+
+- Não existe versão para iPhone. Lá, o caminho é Ajustes › Telefone › Silenciar Desconhecidos.
+
+## Perguntas frequentes
+
+O ZeroSpam é gratuito?
+
+É. O app é gratuito, não tem anúncios, não tem compras dentro do app e não pede cadastro.
+
+Em quais celulares funciona?
+
+Android 10 ou mais novo, em aparelho com chip (função de telefone). Não existe versão para iPhone: no iPhone o próprio sistema tem algo parecido em Ajustes › Telefone › Silenciar Desconhecidos, que manda ligações de números fora da agenda direto para a caixa postal.
+
+Quem está na minha agenda consegue ligar normalmente?
+
+Sim. O ZeroSpam reconhece o mesmo número escrito de formas diferentes: com +55, com 0 e código de operadora, com ou sem o nono dígito, com ou sem DDD.
+
+E quando eu estou esperando a ligação de um número que não conheço?
+
+Use a pausa: 15 minutos, 1 hora ou 4 horas. Todas as ligações tocam nesse período e a proteção volta sozinha no fim do tempo. Se for um número que vai ligar sempre (portaria, médico, oficina), cadastre como exceção.
+
+O que acontece com quem ligou e foi bloqueado?
+
+A chamada é recusada antes de tocar. Para quem ligou, é como se a ligação tivesse sido recusada; dependendo da operadora, pode cair na caixa postal. Seu celular não toca, não acende a tela e não mostra aviso nenhum.
+
+Eu fico sabendo das ligações bloqueadas?
+
+Ficam todas no histórico dentro do app, com data, hora e número, e sem notificação. No Android 11 ou mais novo, o próprio sistema também lista essas ligações no app Telefone, marcadas como bloqueadas.
+
+Ver todas as perguntas →
+
+## Chega de atender robô.
+
+Instale, toque em "Ativar proteção" e responda sim às duas perguntas do Android. Pronto: seu telefone volta a tocar só quando alguém que você conhece está ligando.
+
+Ver o passo a passo
+
+---
+
+# Como ativar o ZeroSpam no Android, passo a passo
+URL: https://spartanti.github.io/zerospam/como-ativar/
+
+Início › Como ativar
+
+# Como ativar o ZeroSpam
+
+Leva menos de um minuto. O Android faz duas perguntas, e as duas precisam de um "sim" para a proteção funcionar.
+
+-
+
+## Instale pela Google Play
+
+O ZeroSpam é gratuito e funciona em celulares com Android 10 ou mais novo, com chip. A loja esconde o app de tablets sem função de telefone, onde ele não teria como agir.
+
+-
+
+## Toque em "Ativar proteção"
+
+É o botão verde da tela de abertura. Ele começa a sequência das duas permissões — você não precisa procurar nada nas configurações.
+
+-
+
+## Escolha o ZeroSpam como identificador de chamadas
+
+O Android pergunta: "Definir ZeroSpam como app padrão identificador de chamadas e spam?". Marque ZeroSpam e toque em Definir como padrão.
+
+É assim que o sistema autoriza um app a examinar a ligação antes de o telefone tocar. Sem isso, nenhum app consegue encerrar uma chamada em silêncio.
+
+-
+
+## Permita o acesso aos contatos
+
+Toque em Permitir. É com a agenda que o ZeroSpam sabe quem você conhece; a consulta acontece no próprio celular, na hora da ligação, e nada é enviado para lugar nenhum.
+
+Se você recusar, o app não bloqueia ninguém com número identificado — por segurança, ele prefere deixar tocar a arriscar barrar um conhecido.
+
+-
+
+## Pronto: escudo verde
+
+Escudo verde e a palavra Protegido querem dizer que só toca quem está na agenda ou nas exceções. Para desligar, é só tocar no escudo.
+
+## Se a pergunta não aparecer
+
+Acontece quando alguém já recusou duas vezes: o Android para de mostrar a caixa. O caminho muda um pouco de marca para marca, mas é sempre parecido com:
+
+Configurações › Apps › Apps padrão › App identificador de chamadas e spam › ZeroSpam. Em celulares Samsung costuma ser Configurações › Aplicativos › Escolher aplicativos padrão.
+
+Dentro do ZeroSpam, a aba Ajustes também mostra a situação das duas permissões, com um botão para cada uma.
+
+## Coloque o botão nas configurações rápidas
+
+Assim dá para ligar e desligar a proteção sem abrir o app: arraste o dedo do topo da tela para baixo duas vezes, toque no lápis (editar) e arraste o botão do ZeroSpam para o painel.
+
+## Antes de entregar o celular para um idoso
+
+- Salve na agenda quem precisa tocar: família, médicos, farmácia, portaria, igreja, escola dos netos.
+
+- Confira se os números estão com DDD. Fixo salvo sem DDD costuma ser o motivo de "não tocou".
+
+- Cadastre como exceção os números que ligam de vez em quando e ninguém quer salvar: laboratório, oficina, entregador.
+
+- Deixe ligado o retorno de emergência (em Ajustes): depois de uma ligação para 190, 192 ou 193, tudo toca por 1 hora.
+
+- Ensine a pausa: é o mesmo gesto de sempre, um toque, quando a pessoa estiver esperando uma ligação.
+
+## Como desativar ou desinstalar
+
+Toque no escudo para desligar a proteção — ele fica vermelho e todas as ligações voltam a tocar. Para sair de vez, desinstale o app: o histórico e as exceções são apagados junto, porque ficam só no aparelho.
+
+Ficou com dúvida? Veja as perguntas frequentes →
+
+---
+
+# Perguntas frequentes sobre o ZeroSpam
+URL: https://spartanti.github.io/zerospam/perguntas-frequentes/
+
+Início › Perguntas frequentes
+
+# Perguntas frequentes
+
+Se a sua dúvida não estiver aqui, escreva para admin@spartanti.com.br.
+
+O ZeroSpam é gratuito?
+
+É. O app é gratuito, não tem anúncios, não tem compras dentro do app e não pede cadastro.
+
+Em quais celulares funciona?
+
+Android 10 ou mais novo, em aparelho com chip (função de telefone). Não existe versão para iPhone: no iPhone o próprio sistema tem algo parecido em Ajustes › Telefone › Silenciar Desconhecidos, que manda ligações de números fora da agenda direto para a caixa postal.
+
+Quem está na minha agenda consegue ligar normalmente?
+
+Sim. O ZeroSpam reconhece o mesmo número escrito de formas diferentes: com +55, com 0 e código de operadora, com ou sem o nono dígito, com ou sem DDD.
+
+E quando eu estou esperando a ligação de um número que não conheço?
+
+Use a pausa: 15 minutos, 1 hora ou 4 horas. Todas as ligações tocam nesse período e a proteção volta sozinha no fim do tempo. Se for um número que vai ligar sempre (portaria, médico, oficina), cadastre como exceção.
+
+O que acontece com quem ligou e foi bloqueado?
+
+A chamada é recusada antes de tocar. Para quem ligou, é como se a ligação tivesse sido recusada; dependendo da operadora, pode cair na caixa postal. Seu celular não toca, não acende a tela e não mostra aviso nenhum.
+
+Eu fico sabendo das ligações bloqueadas?
+
+Ficam todas no histórico dentro do app, com data, hora e número, e sem notificação. No Android 11 ou mais novo, o próprio sistema também lista essas ligações no app Telefone, marcadas como bloqueadas.
+
+E se alguém da família ligar de um número novo, em uma emergência?
+
+O ZeroSpam tem três redes de segurança: libera o retorno de qualquer número para o qual você ligou nos últimos 7 dias; libera tudo por 1 hora depois que você liga para 190, 192, 193 ou outro número de emergência; e, se você quiser ligar essa opção, deixa tocar a segunda chamada do mesmo número em até 3 minutos.
+
+O app manda meus contatos para algum lugar?
+
+Não. O ZeroSpam não tem permissão de internet — o Android nem deixaria o app enviar dados. A agenda é consultada no próprio aparelho, no momento da ligação.
+
+Ele bloqueia número oculto ou privado?
+
+Tem essa opção, ligada por padrão. Mas o Android nem sempre entrega chamadas sem identificação aos apps de bloqueio; para garantir, ative também o bloqueio de números privados no app Telefone. O atalho está em Ajustes, dentro do ZeroSpam.
+
+Bloqueia ligações e mensagens do WhatsApp? E SMS?
+
+Não. O ZeroSpam age só nas ligações da linha telefônica. WhatsApp, Telegram e SMS não passam por ele.
+
+Preciso deixar o app aberto? Gasta bateria?
+
+Não precisa deixar aberto. O Android chama o ZeroSpam sozinho quando uma ligação chega, ele decide em milésimos de segundo e volta a dormir. Fora esse instante, o app não roda.
+
+Como desligo a proteção?
+
+Toque no escudo na tela inicial do app, ou use o botão do ZeroSpam no painel de configurações rápidas do Android. Desinstalar o app remove tudo, inclusive o histórico.
+
+Por que ele pede para ser o "app identificador de chamadas e spam"?
+
+É a forma oficial do Android de permitir que um app examine a ligação antes de o telefone tocar. Sem isso, nenhum app consegue encerrar uma chamada em silêncio.
+
+Depois de reiniciar o celular ele já está protegendo?
+
+Só a partir do primeiro desbloqueio da tela. Antes disso o Android não deixa apps comuns rodarem, então as ligações tocam normalmente.
+
+Quem fez o ZeroSpam?
+
+A Spartan TI, empresa brasileira de Cariacica (ES). Dúvidas e sugestões: admin@spartanti.com.br.
+
+Algo não está funcionando? Veja o suporte →
+
+---
+
+# Guias do ZeroSpam: telemarketing e golpes por telefone
+URL: https://spartanti.github.io/zerospam/guias/
+
+Início › Guias
+
+# Guias
+
+O que funciona (e o que não funciona) contra as ligações que ninguém quer receber.
+
+## Como bloquear ligações de telemarketing no Android
+O que funciona de verdade contra telemarketing e robôs no celular, caminho por caminho.
+
+## Como proteger idosos de golpes por telefone
+Golpes comuns, combinados em família e a configuração que evita a ligação chegar.
+
+---
+
+# Como bloquear ligações de telemarketing no Android — ZeroSpam
+URL: https://spartanti.github.io/zerospam/guias/como-bloquear-ligacoes-de-telemarketing/
+
+Início › Guias
+
+# Como bloquear ligações de telemarketing no Android
+
+Não Me Perturbe, prefixo 0303, bloqueio do próprio Android e lista branca: o que cada caminho resolve e o que continua passando.
+
+Guia · atualizado em 28 de setembro de 2026
+
+Se o seu telefone toca três vezes por dia com oferta de plano, consignado ou "atualização cadastral", você já sabe: bloquear número por número não dá conta. Cada ligação vem de um número diferente. Este guia reúne o que existe hoje no Brasil, o que cada opção realmente resolve e o que continua passando.
+
+Neste guia
+
+- Cadastrar o número no Não Me Perturbe
+
+- Reconhecer e barrar o prefixo 0303
+
+- Usar o bloqueio do próprio Android
+
+- Inverter a lógica: lista branca
+
+- Resumo comparativo
+
+## 1. Cadastre seu número no Não Me Perturbe
+
+O naomeperturbe.com.br é o cadastro oficial criado pelas operadoras por exigência da Anatel. Você informa seus números e, a partir de 30 dias, as empresas participantes ficam proibidas de ligar oferecendo produtos. O cadastro cobre ofertas de telefonia, internet e TV por assinatura e, desde 2020, também ofertas de crédito consignado de bancos e financeiras associadas.
+
+É gratuito e vale a pena fazer. Mas repare no limite: ele só obriga quem participa. Central de robô que dispara milhares de chamadas, empresa de fora do acordo e golpista não estão nem aí para o cadastro.
+
+Cuidado com o golpe do cadastro. Ninguém liga para você oferecendo "incluir seu número na lista do não perturbe" — e muito menos pede dados bancários ou código de confirmação para isso. O cadastro é feito só pelo site oficial.
+
+## 2. Aprenda a reconhecer o prefixo 0303
+
+Desde março de 2022, a Anatel exige que as chamadas de telemarketing ativo comecem com 0303. A ideia é boa: bateu 0303 na tela, é venda, e você decide antes de atender.
+
+Dois problemas na prática. O primeiro é que poucos apps de telefone deixam bloquear um prefixo inteiro — o bloqueio costuma ser número por número, e o 0303 tem milhares de variações. O segundo é que quem liga sem autorização, incluindo golpista, simplesmente não usa o prefixo.
+
+Um app de lista branca resolve os dois de lado: como nenhum 0303 está na sua agenda, todos são encerrados em silêncio, sem você precisar cadastrar nada.
+
+## 3. Use o bloqueio que já vem no Android
+
+Todo app Telefone tem uma tela de números bloqueados. Em geral você encontra:
+
+- Bloquear este número — resolve o vizinho chato, não resolve telemarketing, que troca de número toda hora.
+
+- Bloquear números desconhecidos ou privados — cuidado com o nome: na maioria dos aparelhos isso significa apenas chamadas sem identificação (número oculto), e não "números que não estão na minha agenda".
+
+- Filtro de spam — alguns apps, como o Telefone do Google, marcam ou silenciam números denunciados por outras pessoas. Ajuda contra os robôs mais famosos e falha justamente com número novo.
+
+Vale ativar o bloqueio de números privados: é rápido e cobre um buraco que os apps de bloqueio nem sempre alcançam.
+
+## 4. Inverta a lógica: lista branca
+
+Todos os caminhos acima têm a mesma fragilidade: são listas negras. Alguém precisa saber que aquele número é ruim antes de você receber a ligação. A lista branca inverte isso — só toca quem está na sua agenda (mais as exceções que você cadastrar). Número novo, de qualquer origem, não toca.
+
+É o que o ZeroSpam faz: quando a chamada chega, ele confere a agenda no próprio aparelho e encerra a ligação desconhecida antes de tocar, sem acender a tela e sem notificação. Fica tudo no histórico do app, para você olhar quando quiser.
+
+A contrapartida é real e vale repetir: ligação legítima de número desconhecido também não toca. Por isso o app tem pausa temporária (15 minutos, 1 hora, 4 horas), exceções por 24 horas, liberação automática do retorno de quem você chamou nos últimos 7 dias e uma janela de 1 hora depois de você ligar para 190, 192 ou 193.
+
+## Resumo
+
+CaminhoResolveContinua passando
+
+Não Me PerturbeOfertas das empresas participantesRobôs, empresas de fora do acordo, golpes
+
+Bloquear número a númeroUm número específicoQualquer número novo
+
+Bloquear números privadosChamadas sem identificaçãoNúmeros identificados que você não conhece
+
+Filtro de spam por listaNúmeros já denunciadosNúmeros novos, inclusive os de golpe
+
+Lista branca (ZeroSpam)Tudo que não está na sua agendaQuem está na agenda — e WhatsApp e SMS, que ficam de fora
+
+## O que não adianta fazer
+
+- Atender e pedir para tirar da lista. Atender confirma que o número existe e tem gente do outro lado; costuma aumentar o volume de chamadas.
+
+- Apertar a tecla que o robô manda para "sair da lista". Vale a mesma coisa.
+
+- Devolver a ligação de números estranhos, principalmente com DDD ou DDI que você não conhece.
+
+Em uma frase: faça o cadastro no Não Me Perturbe, ative o bloqueio de números privados no app Telefone e, se o volume continuar, inverta a lógica com uma lista branca. Conheça o ZeroSpam.
+
+---
+
+# Como proteger idosos de golpes por telefone — ZeroSpam
+URL: https://spartanti.github.io/zerospam/guias/como-proteger-idosos-de-golpes-por-telefone/
+
+Início › Guias
+
+# Como proteger idosos de golpes por telefone
+
+Os golpes mais comuns por ligação, os sinais de alerta, as regras que a família deve combinar e como filtrar as chamadas antes que elas cheguem.
+
+Guia · atualizado em 28 de setembro de 2026
+
+Golpe por telefone não depende de a pessoa ser ingênua. Ele depende de pressa, susto e autoridade: alguém que diz ser do banco, do INSS ou da polícia, fala com firmeza e não dá tempo de pensar. Com idosos funciona mais porque a ligação chega em cima de uma rotina em que o telefone ainda é o canal principal.
+
+Este guia tem duas partes: o que combinar com a família e como reduzir o número de ligações estranhas que chegam ao aparelho.
+
+Neste guia
+
+- Os golpes mais comuns por ligação
+
+- Sinais de alerta
+
+- Combinados com a família
+
+- Filtrar as ligações antes que cheguem
+
+- Se o golpe já aconteceu
+
+## Os golpes mais comuns por ligação
+
+- Falsa central do banco. Dizem que houve uma compra suspeita e conduzem a vítima a "cancelar" — o que na prática é aprovar uma transferência, um Pix ou um empréstimo.
+
+- Falso funcionário do INSS ou de órgão público. Fala em recadastramento, revisão de benefício ou liberação de valores e pede dados, senha do Meu INSS ou pagamento de uma taxa.
+
+- Falso parente em apuros. Voz chorosa, telefone "novo", acidente ou prisão. Pede dinheiro rápido e insiste para não avisar ninguém.
+
+- Falso sequestro. Gritos ao fundo, ameaça e ordem para não desligar. O objetivo é impedir a confirmação com a pessoa "sequestrada".
+
+- Golpe do cartão e do motoboy. Depois da ligação, alguém vai até a casa "recolher o cartão bloqueado". Nenhum banco faz isso.
+
+- Prêmio, sorteio ou empréstimo fácil. Para receber, é preciso pagar uma taxa antes.
+
+## Sinais de alerta
+
+- Pressa: "tem que ser agora", "não desligue", "o sistema expira em 5 minutos".
+
+- Pedido de senha, código do SMS, foto do cartão ou do documento.
+
+- Pedido de transferência para uma "conta segura" ou para a "conta do gerente".
+
+- Sigilo: "não comente com ninguém, é uma investigação".
+
+- Número desconhecido que já começa sabendo seu nome — dado vazado não prova nada.
+
+A regra que resolve quase tudo: desligue e ligue você. Use o número do verso do cartão, do extrato ou do site oficial. Nenhum banco, órgão público ou operadora pede senha, código ou transferência por telefone.
+
+## Combinados com a família
+
+- Senha da família. Uma palavra combinada entre poucas pessoas. Se ligarem pedindo dinheiro, peça a palavra. Golpista não sabe.
+
+- Regra do "eu ligo de volta". Qualquer pedido de dinheiro por telefone só vale depois de você ligar para o número que já está salvo na agenda.
+
+- Ninguém entrega cartão em casa. Nem para motoboy, nem para "funcionário do banco".
+
+- Limites no banco. Reduza o limite do Pix noturno e do cartão, e ative avisos de transação no aplicativo.
+
+- Combinado sem vergonha. Diga à pessoa que, se cair em algo, a família quer saber na hora e não vai brigar. Muito golpe só cresce porque a vítima esconde.
+
+## Filtrar as ligações antes que cheguem
+
+Toda essa conversa fica mais fácil se o telefone simplesmente não tocar quando é um desconhecido. É o que um bloqueador por lista branca faz: o número que não está na agenda é encerrado em silêncio, antes de tocar.
+
+Com o ZeroSpam, a configuração para um familiar idoso leva alguns minutos:
+
+- Salve na agenda todo mundo que precisa tocar: filhos, netos, vizinhos, médicos, farmácia, igreja, portaria. Com DDD.
+
+- Cadastre como exceção os números que ligam de vez em quando: laboratório, oficina, agendamento do posto de saúde.
+
+- Deixe ligado o retorno de emergência: depois de ligar para 190, 192 ou 193, tudo toca por 1 hora.
+
+- Explique a pausa: quando a pessoa estiver esperando entrega ou consulta, um toque libera 1 hora.
+
+- Combine de olhar o histórico juntos de vez em quando — é uma boa conversa sobre quem anda ligando.
+
+Veja o passo a passo com as telas →
+
+### O que o filtro não pega
+
+- WhatsApp. Boa parte dos golpes migrou para lá. Ative a confirmação em duas etapas e desconfie de "mãe, mudei de número".
+
+- Número falsificado. Golpistas conseguem exibir o número de um banco na tela. Se esse número estiver salvo na agenda, a ligação toca. Por isso a regra do "desligue e ligue você" continua valendo.
+
+- SMS e e-mail. Links de "atualização cadastral" seguem chegando por outros caminhos.
+
+## Se o golpe já aconteceu
+
+- Ligue para o banco pelo número do verso do cartão e peça bloqueio do cartão, contestação e revisão de empréstimos feitos no dia.
+
+- Registre boletim de ocorrência — em quase todos os estados dá para fazer pela internet.
+
+- Se houve Pix, peça ao banco o Mecanismo Especial de Devolução. O pedido tem prazo, então quanto antes melhor.
+
+- Troque senhas do banco, do e-mail e do WhatsApp, e avise a família: golpista costuma voltar na mesma vítima.
+
+Vergonha é a maior aliada do golpista. Quem conta rápido para a família e para o banco costuma recuperar mais.
+
+---
+
+# Suporte do ZeroSpam
+URL: https://spartanti.github.io/zerospam/suporte/
+
+Início › Suporte
+
+# Suporte
+
+Problemas comuns, o que costuma ser a causa e como falar com a gente.
+
+## Um número desconhecido tocou mesmo com a proteção ligada
+
+Na ordem, as causas mais comuns:
+
+- A pausa estava ativa. A tela inicial mostra "Pausado" e o horário em que a proteção volta.
+
+- Você ligou para esse número nos últimos 7 dias e o retorno é liberado automaticamente (dá para desligar em Ajustes).
+
+- Você ligou para 190, 192, 193 ou outro número de emergência há menos de 1 hora: nessa janela tudo toca.
+
+- O número está na agenda ou nas exceções — vale conferir, às vezes está salvo dentro de outro contato.
+
+- A opção "liberar ligação insistente" está ligada e era a segunda chamada em 3 minutos.
+
+## Um contato meu não tocou
+
+Isso é o que o app mais tenta evitar, então vale investigar:
+
+- Veja no histórico do ZeroSpam qual número foi bloqueado e compare com o que está salvo na agenda. Fixo salvo sem DDD é a causa mais comum.
+
+- Empresas com PABX às vezes ligam de um número diferente do que atende. Cadastre o que aparece no histórico como exceção.
+
+- Confirme, em Ajustes, que a permissão de contatos está concedida.
+
+## Aparece "Proteção inativa"
+
+Quer dizer que o ZeroSpam deixou de ser o app identificador de chamadas e spam — normalmente porque outro app assumiu o papel, ou depois de restaurar o celular. Toque em "Ativar agora" na própria tela. Se a pergunta não aparecer, vá em Como ativar, seção "Se a pergunta não aparecer".
+
+## Quero apagar meus dados
+
+Ajustes › Apagar histórico apaga a lista de bloqueios. Desinstalar o app apaga tudo, inclusive exceções: nada fica em servidor, porque o app não tem acesso à internet.
+
+## Falar com a gente
+
+Escreva para admin@spartanti.com.br. Se for sobre uma ligação específica, conte a marca e o modelo do celular, a versão do Android e o que aparece no histórico do app — com isso dá para reproduzir o caso aqui.
+
+ZeroSpam 1.0.3 · Spartan TI · Cariacica, ES
+
+---
+
+# Política de privacidade do ZeroSpam
+URL: https://spartanti.github.io/zerospam/privacidade.html
+
+Início › Política de privacidade
+
+# Política de privacidade
+
+Atualizada em 28 de setembro de 2026.
+
+Resumo: o ZeroSpam não coleta, não envia e não compartilha nenhum dado. O app não tem permissão de acesso à internet.
+
+## O que o app acessa
+
+Contatos da agenda. Quando uma ligação chega, o app consulta, no próprio celular, se o número está na sua agenda. É isso que decide se o telefone toca. A agenda não é copiada, guardada nem enviada.
+
+Número de quem liga. O Android informa ao app o número da ligação recebida ou feita, para a triagem. O app guarda no celular o número, a data e a hora das ligações bloqueadas (histórico) e das ligações que você fez nos últimos 7 dias (para liberar o retorno).
+
+## Onde os dados ficam
+
+Histórico, exceções e ajustes ficam apenas na memória interna do celular, fora do backup na nuvem. O histórico é apagado automaticamente após 90 dias, e você pode apagá-lo a qualquer momento em Ajustes. Desinstalar o app apaga tudo.
+
+## O que o app não faz
+
+Não envia dados para servidores, não usa anúncios, não usa ferramentas de análise ou rastreamento e não vende nem compartilha informações com terceiros. O app não pede a permissão de internet, então o próprio Android impede qualquer envio.
+
+## Registro de chamadas do sistema
+
+Em versões recentes do Android, o próprio sistema anota as ligações bloqueadas no registro do app Telefone. Esse registro é do Android, não do ZeroSpam.
+
+## Crianças
+
+O app não é direcionado a menores de 13 anos e não coleta dados de ninguém.
+
+## Contato
+
+Spartan TI — admin@spartanti.com.br

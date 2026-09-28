@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spartanti.github.io/zerospam/sitemap.xml
