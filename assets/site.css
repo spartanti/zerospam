@@ -235,3 +235,17 @@ p { margin: 0; }
 .site-foot a { color: var(--ink); }
 .site-foot .fine { grid-column: 1 / -1; color: var(--muted); font-size: .92rem; border-top: 1px solid var(--line); padding-top: 18px; }
 @media (max-width: 720px) { .site-foot .wrap { grid-template-columns: 1fr; } }
+
+/* ---------- formulário de cadastro de empresas ---------- */
+.cadastro { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 24px; display: grid; gap: 16px; }
+.cadastro .campos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cadastro label { display: grid; gap: 6px; font-weight: 700; font-size: 1rem; }
+.cadastro label.largo { grid-column: 1 / -1; }
+.cadastro input, .cadastro select, .cadastro textarea {
+  font: 400 1.05rem/1.4 "Atkinson", system-ui, sans-serif; color: var(--ink); background: var(--bg);
+  border: 2px solid var(--line); border-radius: 12px; padding: 12px 14px; width: 100%;
+}
+.cadastro input:focus-visible, .cadastro select:focus-visible, .cadastro textarea:focus-visible { border-color: var(--green); outline: none; }
+.cadastro textarea { resize: vertical; }
+.cadastro button { justify-self: start; }
+@media (max-width: 640px) { .cadastro .campos { grid-template-columns: 1fr; } .cadastro { padding: 18px; } }

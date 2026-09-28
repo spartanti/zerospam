@@ -14,6 +14,7 @@
 - [Guias do ZeroSpam: telemarketing e golpes por telefone](https://spartanti.github.io/zerospam/guias/): Conteúdo prático sobre bloqueio de ligações no Android, prefixo 0303, Não Me Perturbe e proteção de idosos contra golpes por telefone.
 - [Como bloquear ligações de telemarketing no Android — ZeroSpam](https://spartanti.github.io/zerospam/guias/como-bloquear-ligacoes-de-telemarketing/): Não Me Perturbe, prefixo 0303, bloqueio do próprio Android e lista branca: o que cada caminho resolve e o que continua passando.
 - [Como proteger idosos de golpes por telefone — ZeroSpam](https://spartanti.github.io/zerospam/guias/como-proteger-idosos-de-golpes-por-telefone/): Os golpes mais comuns por ligação, os sinais de alerta, as regras que a família deve combinar e como filtrar as chamadas antes que elas cheguem.
+- [Empresas certificadas: faça a ligação da sua clínica tocar](https://spartanti.github.io/zerospam/empresas/): Clínicas, hospitais e laboratórios podem liberar seus números para tocar nos celulares com ZeroSpam. Veja as regras e cadastre sua empresa.
 - [Suporte do ZeroSpam](https://spartanti.github.io/zerospam/suporte/): Um desconhecido tocou? Um contato não tocou? Proteção inativa? Causas comuns, soluções e contato direto.
 - [Política de privacidade do ZeroSpam](https://spartanti.github.io/zerospam/privacidade.html): O ZeroSpam não coleta, não envia e não compartilha dados. O app não tem permissão de acesso à internet.
 
@@ -37,7 +38,7 @@ Como funciona
 
 - Sem anúncios
 
-- Funciona sem internet
+- Sem anúncios e sem cadastro
 
 - Android 10 ou mais novo
 
@@ -81,7 +82,7 @@ A diferença aparece justamente no caso que mais dói: o número que ninguém vi
 
 - Número novo de golpista toca normalmente.
 
-- Em geral consulta servidores na internet e manda para lá o número de quem ligou.
+- Em geral manda para um servidor o número de quem está ligando para você.
 
 ### ZeroSpam (lista branca)
 
@@ -89,7 +90,7 @@ A diferença aparece justamente no caso que mais dói: o número que ninguém vi
 
 - Número novo de golpista também não toca — é o mesmo caso.
 
-- A conferência é no aparelho. O app nem tem permissão de internet.
+- A conferência é no próprio aparelho, sem mandar para lugar nenhum quem ligou para você.
 
 A troca é honesta: ligações legítimas de números desconhecidos também deixam de tocar. Por isso existem a pausa temporária, as exceções, o retorno liberado de quem você chamou e a janela após ligar para a emergência.
 
@@ -136,6 +137,9 @@ Liga e desliga a proteção sem abrir o app, junto com Wi-Fi e lanterna.
 ### Números ocultos
 Bloqueia também chamadas sem identificação, se você quiser.
 
+### Saúde certificada
+Clínicas e hospitais verificados podem confirmar consulta e exame. Você vê a lista e desliga quando quiser.
+
 ### Na dúvida, toca
 Sem acesso à agenda ou diante de qualquer erro, o app deixa tocar. Ele nunca arrisca barrar um conhecido.
 
@@ -155,17 +159,17 @@ Guia: proteger idosos de golpes →
 
 Se você fala com todo mundo pelo WhatsApp e só atende ligação de conhecido, a lista branca é exatamente o seu comportamento, automatizado.
 
-## Sem internet. De verdade.
+## Seus dados não saem daqui
 
-Não é promessa de política de privacidade: o app não pede permissão de internet, então o Android simplesmente não deixaria ele enviar nada. Dá para conferir na própria ficha da Google Play, em "Permissões do app".
+O ZeroSpam não envia nada: nem sua agenda, nem quem ligou para você, nem identificador do aparelho. A única coisa que ele faz pela internet é baixar a lista das empresas de saúde certificadas — um pedido que não leva nada seu e que é conferido por assinatura digital antes de valer.
 
 Leia a política de privacidade →
 
 Permissões que o app pede
-Uma: contatos (READ_CONTACTS)
+Contatos (READ_CONTACTS) e internet
 
 Dados enviados para servidores
-Nenhum — não há permissão de internet
+Nenhum — a internet só serve para baixar a lista
 
 Conta, cadastro ou login
 Não existe
@@ -186,6 +190,8 @@ Melhor saber antes de instalar do que descobrir depois.
 - No Android 11 ou mais novo, o sistema lista as ligações bloqueadas no app Telefone, marcadas como bloqueadas. Elas não tocam nem avisam, mas ficam visíveis lá.
 
 - Logo depois de reiniciar o celular, até o primeiro desbloqueio da tela, as ligações tocam normalmente.
+
+- Clínicas, hospitais e laboratórios certificados tocam mesmo sem estar na sua agenda, porque pagam por essa liberação. Isso vem ligado e você desliga em Ajustes, com um toque.
 
 - Não existe versão para iPhone. Lá, o caminho é Ajustes › Telefone › Silenciar Desconhecidos.
 
@@ -339,7 +345,19 @@ O ZeroSpam tem três redes de segurança: libera o retorno de qualquer número p
 
 O app manda meus contatos para algum lugar?
 
-Não. O ZeroSpam não tem permissão de internet — o Android nem deixaria o app enviar dados. A agenda é consultada no próprio aparelho, no momento da ligação.
+Não. Sua agenda é consultada no próprio aparelho, no momento da ligação, e nada é enviado: nem contatos, nem quem ligou, nem identificador do celular. O app usa a internet só para baixar a lista de empresas de saúde certificadas, e esse pedido não leva nenhum dado seu.
+
+O que são as empresas de saúde certificadas?
+
+São clínicas, hospitais, laboratórios e consultórios verificados que pagam à Spartan TI para conseguir falar com pacientes: confirmar consulta, remarcar exame, avisar de resultado. As ligações desses números tocam mesmo sem estar na sua agenda. A lista vem assinada digitalmente, fica visível dentro do app (Ajustes › Ver quem está liberado) e você pode desligar tudo com um toque.
+
+Não quero receber ligação de empresa nenhuma. Como desligo?
+
+Ajustes › Aceitar empresas de saúde certificadas. Desligado, volta a valer a regra simples: só toca quem está na sua agenda ou nas suas exceções.
+
+Minha clínica pode entrar nessa lista?
+
+Pode, se for da área de saúde e tiver CNPJ ativo. O cadastro, as regras e o valor por número estão na página Empresas certificadas.
 
 Ele bloqueia número oculto ou privado?
 
@@ -584,6 +602,100 @@ Vergonha é a maior aliada do golpista. Quem conta rápido para a família e par
 
 ---
 
+# Empresas certificadas: faça a ligação da sua clínica tocar
+URL: https://spartanti.github.io/zerospam/empresas/
+
+Início › Empresas certificadas
+
+# Sua clínica liga e o paciente não atende?
+
+Quem usa o ZeroSpam não recebe ligação de número que não está na agenda. A certificação faz o telefone da sua clínica, hospital ou laboratório tocar nesses celulares.
+
+Só para a área da saúde. Clínicas, consultórios, hospitais, laboratórios e planos de saúde.
+Não certificamos telemarketing, cobrança, crédito ou venda ativa — é justamente disso que o app protege.
+
+## Como funciona
+
+- Você cadastra o CNPJ e os números que precisam tocar (o do agendamento, o do laboratório, o do consultório).
+
+- A gente confere se o CNPJ está ativo, se a atividade é de saúde e se o número é mesmo da empresa.
+
+- Aprovado, começa a cobrança mensal por número, pela Asaas (Pix, boleto ou cartão), com nota fiscal.
+
+- O número entra na lista assinada que os aplicativos baixam. Em poucos minutos ele já toca nos celulares.
+
+## Quanto custa
+
+R$ 99,00 por número liberado, por mês. Sem fidelidade e sem multa: cancelando, o número sai da lista na virada do período pago. Cada número é uma assinatura — três linhas, três assinaturas.
+
+## O que o cliente vê
+
+Transparência é parte do acordo com quem instalou o app: o nome e o número da sua empresa aparecem na lista dentro do ZeroSpam, em Ajustes › Ver quem está liberado. O usuário pode desligar a aceitação de empresas certificadas quando quiser — por isso não prometemos alcance de 100% dos aparelhos, e sim a liberação em todos os que mantêm a opção ligada (ela vem ligada).
+
+## Regras que valem para todo mundo
+
+- O número tem que ser da própria empresa cadastrada e usado para relacionamento com pacientes: confirmação, remarcação, resultado, orientação.
+
+- Nada de venda ativa, cobrança terceirizada, pesquisa em massa ou robô discador. Reclamação de uso indevido suspende o número na hora, sem devolução do mês.
+
+- Um cadastro por CNPJ. Terceirizar a liberação para outra empresa cancela o contrato.
+
+- A Spartan TI pode recusar ou encerrar qualquer cadastro, devolvendo o valor proporcional.
+
+## Cadastro
+
+Preencha e recebemos na hora. Depois da conferência, a cobrança chega no e-mail informado.
+
+Não preencha
+
+Razão social
+Nome fantasia
+CNPJ
+Tipo de estabelecimento
+
+Escolha
+Clínica
+Hospital
+Laboratório
+Consultório
+Plano de saúde
+Outro (saúde)
+
+CNES (se tiver)
+Responsável
+E-mail para a cobrança
+Telefone de contato
+Site (opcional)
+
+Números que devem tocar (um por linha)
+
+Alguma observação (opcional)
+
+Ao enviar, você concorda com as regras acima e autoriza a cobrança mensal por número após a aprovação.
+
+Enviar cadastro
+
+## Perguntas de quem vai contratar
+
+Em quanto tempo meu número começa a tocar?
+Assim que o primeiro pagamento é confirmado, o número entra na lista. Os aplicativos buscam a lista várias vezes ao dia e também ao serem abertos, então costuma valer em minutos.
+
+Emitem nota fiscal?
+Sim, pela Spartan TI (Cariacica/ES), junto com a cobrança mensal.
+
+Posso cancelar quando quiser?
+Pode, escrevendo para admin@spartanti.com.br. O número sai da lista ao fim do período já pago.
+
+E se o paciente desligar a opção no app dele?
+Aí a sua ligação volta a ser tratada como qualquer número desconhecido nesse aparelho. A opção vem ligada e pode ser desligada pelo usuário — é esse o acordo de confiança do app.
+
+Serve para consultório com um telefone só?
+Serve. A cobrança é por número, então um telefone é uma assinatura.
+
+Dúvidas antes de cadastrar: admin@spartanti.com.br.
+
+---
+
 # Suporte do ZeroSpam
 URL: https://spartanti.github.io/zerospam/suporte/
 
@@ -629,7 +741,7 @@ Ajustes › Apagar histórico apaga a lista de bloqueios. Desinstalar o app apag
 
 Escreva para admin@spartanti.com.br. Se for sobre uma ligação específica, conte a marca e o modelo do celular, a versão do Android e o que aparece no histórico do app — com isso dá para reproduzir o caso aqui.
 
-ZeroSpam 1.0.3 · Spartan TI · Cariacica, ES
+ZeroSpam 1.2.0 · Spartan TI · Cariacica, ES
 
 ---
 
